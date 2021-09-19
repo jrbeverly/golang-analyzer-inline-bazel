@@ -17,6 +17,6 @@ func init() {
 var listS3Cmd = &cobra.Command{
 	Use: "list-s3",
 	Run: func(cmd *cobra.Command, args []string) {
-		cobrago.ListFilesFromStorage(bucketName, storage, writer)
+		cobrago.ListFilesFromStorage(storage, bucketName, writer)
 	},
 }

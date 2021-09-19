@@ -13,7 +13,13 @@ type RemoteFile struct {
 	Size int64
 }
 
-func ListFilesFromStorage(bucket string, storage RemoteStorage, writer SystemWriter) {
-	files := storage.List(bucket)
+func ListFilesFromStorage(rstorage RemoteStorage, bucket string, writer SystemWriter) {
+	files := rstorage.List(bucket)
 	writer.Print(files)
 }
+
+// This is invalid and wil throw an error on the static analyzers
+// func ListFilesInStorage(bucket string, storage RemoteStorage, writer SystemWriter) {
+// 	files := storage.List(bucket)
+// 	writer.Print(files)
+// }
