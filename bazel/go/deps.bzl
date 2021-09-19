@@ -598,7 +598,7 @@ def go_dependencies():
     )
     go_repository(
         name = "com_github_jrbeverly_gitpod_cobra_golang",
-        importpath = "github.com/jrbeverly/golang-analyze",
+        importpath = "github.com/jrbeverly/golang-analyzer-inline-bazel",
         sum = "h1:x02SosOy9PKeYSZLCd9ScjYRDeL27Lw/e3mk/CaQqRs=",
         version = "v0.0.0-20210712203006-898471fdc307",
     )
