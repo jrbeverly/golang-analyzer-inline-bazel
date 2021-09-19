@@ -1,4 +1,4 @@
-module github.com/jrbeverly/golang-analyze
+module github.com/jrbeverly/golang-analyzer-inline-bazel
 
 go 1.16
 
